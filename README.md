@@ -20,3 +20,15 @@ This WEB APPLICATION is built on angular which imitates popular GmailApp. Featur
 1. `npm install`
 2. `npm start`
 3. `Voila! you are good to go. Hop to http://localhost:8080/`
+
+## Future Scope 
+
+1. Text Editor of Compose mail can be taken to its best 
+2. Drafts(SAVING MAILS), Trash, implementation,
+3. Refresh(Polling)
+4. Segregating mails - Primary, social, work, irrelevant
+5. Sorting/Searching DateWise
+
+![image](https://github.com/techquee/Gmail-MockApp/blob/master/screenshots/Screenshot%20(31).png)
+![image](https://github.com/techquee/Gmail-MockApp/blob/master/screenshots/Screenshot%20(32).png)
+
