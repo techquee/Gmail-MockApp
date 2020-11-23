@@ -1,0 +1,87 @@
+﻿<!-- <h1>Hi {{currentUser.firstName}}!</h1>
+<p>You're logged in with Angular!!</p>
+<h3>All registered users:</h3> -->
+
+    <!-- <div class="body"> -->
+        <!-- <div class="sidebar"> -->
+            <app-sidebar (chooseTab)="changeTab($event)"></app-sidebar>
+            <div class="sidebar-container">
+              <button class="primary" (click)="composeMail()"> Compose</button>
+                <ul class="sidebar-navigation">
+                  <li class="header">FOLDERS</li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-home" aria-hidden="true"></i> Inbox
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-paper-plane" aria-hidden="true"></i> Send Mail
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-clone" aria-hidden="true"></i>Drafts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-tachometer" aria-hidden="true"></i> Trash
+                    </a>
+                  </li>
+                  <li class="header">CATEGORIES</li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users" aria-hidden="true"></i> Work
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-cog" aria-hidden="true"></i> Social
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-info-circle" aria-hidden="true"></i> Client
+                    </a>
+                  </li>
+                  <li class="header">LABELS</li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users" aria-hidden="true"></i> Music
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-cog" aria-hidden="true"></i> Work
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-info-circle" aria-hidden="true"></i> Information
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="content-container">
+              
+                <div class="container-fluid">
+              
+                  <!-- Main component for a primary marketing message or call to action -->
+                  <div class="">
+                    <app-mailbox></app-mailbox>
+                  </div>
+    
+                </div>
+              </div>
+
+  <app-compose *ngIf="showAck" (close)="closeAck()"> </app-compose>
+
+
+<!-- <ul>
+    <li *ngFor="let user of users">
+        {{user.username}} ({{user.firstName}} {{user.lastName}})
+        - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+    </li>
+</ul> -->

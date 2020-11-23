@@ -1,0 +1,19 @@
+<div class="acknowledgement">
+  <div>
+    <h6 class="heading">New Message</h6>
+    <div class="displayFlex">To:  
+      <input (keyup)="searchDevices($event)" id="toMail" class="borderNone" type="text">
+    </div> 
+    <div class="displayFlex">Subject: 
+      <input (keyup)="searchDevices($event)" id="subject" class="borderNone" type="text">
+    </div>
+    <div class="lightColor">
+     <br/>
+      <textarea class="form-control" class="emailBody" id="bodyContent" rows="3"></textarea>
+     </div>
+      <div>
+        <button (click)="sendMail()"> Send </button>
+        <button (click)="closePopup()"> Close </button>
+      </div>
+  </div>
+</div>
