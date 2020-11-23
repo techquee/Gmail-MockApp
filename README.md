@@ -27,6 +27,7 @@ This WEB APPLICATION is built on angular which imitates popular GmailApp. Featur
 2. Drafts(SAVING MAILS), Trash, implementation,
 3. Refresh(Polling)
 4. Segregating mails - Primary, social, work, irrelevant
+5. Sorting/Searching DateWise
 
 ![image](https://github.com/techquee/Gmail-MockApp/blob/master/screenshots/Screenshot%20(31).png)
 ![image](https://github.com/techquee/Gmail-MockApp/blob/master/screenshots/Screenshot%20(32).png)
