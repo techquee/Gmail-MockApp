@@ -20,3 +20,7 @@ This WEB APPLICATION is built on angular which imitates popular GmailApp. Featur
 1. `npm install`
 2. `npm start`
 3. `Voila! you are good to go. Hop to http://localhost:8080/`
+
+![image](https://github.com/techquee/Gmail-MockApp/blob/master/screenshots/Screenshot%20(31).png)
+![image](https://github.com/techquee/Gmail-MockApp/blob/master/screenshots/Screenshot%20(32).png)
+
