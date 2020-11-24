@@ -44,7 +44,7 @@ export class MailboxComponent implements OnInit {
   }
   selectAllEmail(){
       for(var i=0; i<this.mockData.length; i++){
-        this.selectedEmail[i] = {
+        this.selectedEmail[this.mockData[i].msg] = {
           name: this.selectedEmail[i].name, 
           msg: this.selectedEmail[i].msg,
           time: this.selectedEmail[i].time
@@ -53,11 +53,11 @@ export class MailboxComponent implements OnInit {
   }
   selectEmail(i){
     this.selectedEmail.forEach(mail => {
-      if(this.selectedEmail[i].name === mail.name){
-        delete this.selectedEmail[i];
+      if(this.selectedEmail[i].msg === mail.msg){
+        delete this.selectedEmail[this.mockData[i].msg];
       }
       else{
-        this.selectedEmail[i] = {
+        this.selectedEmail[this.mockData[i].msg] = {
           name: this.selectedEmail[i].name, 
           msg: this.selectedEmail[i].msg,
           time: this.selectedEmail[i].time

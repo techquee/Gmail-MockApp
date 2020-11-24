@@ -8,7 +8,7 @@
 <div class="devices">
   <div>
       <div (click)="selectAll()">
-        <app-checkbox [width]="'20px'" [marginLeft]="'10px'" [marginRight]="'10px'" [value]="'true'" (click)="selectAllEmail($event)"></app-checkbox>
+        <app-checkbox [width]="'20px'" [marginLeft]="'10px'" [marginRight]="'10px'" [value]="object.keys(selectedEmail).length === object.keys(mockData).length" (click)="selectAllEmail($event)"></app-checkbox>
       </div>
       <div>
         <i class="fa fa-repeat" aria-hidden="true"></i>
@@ -32,7 +32,7 @@
     <!-- <ng-container *ngFor="let mail of mockData | async | filter : searchText">   -->
     <!-- <ng-container>   -->
         <div>     
-              <app-checkbox [width]="'20px'" [value]="object.keys(selectedEmpList).length === object.keys(schedules).length || object.keys(selectedEmpList).length === 20" (click)="selectEmail($event)"></app-checkbox>
+            <app-checkbox [width]="'20px'" [marginLeft]="'10px'" [marginRight]="'10px'" [value]="object.keys(selectedEmail).includes(i.msg)" (click)="selectEmail($event)"></app-checkbox>
              <!-- CheckBox -->
             <!-- <div>{{mail.name}}</div>
             <div>{{mail.msg}}</div>
@@ -42,23 +42,13 @@
             <div>2:30 </div> 
         </div>
         <div>     
-        
-            <app-checkbox [width]="'20px'" [value]="object.keys(selectedEmpList).length === object.keys(schedules).length || object.keys(selectedEmpList).length === 20" (click)="selectEmail($event)"></app-checkbox>
-           <!-- CheckBox -->
-          <!-- <div>{{mail.name}}</div>
-          <div>{{mail.msg}}</div>
-          <div>{{mail.time}}</div> -->
+          <app-checkbox [width]="'20px'" [marginLeft]="'10px'" [marginRight]="'10px'" [value]="object.keys(selectedEmail).includes(i.msg)" (click)="selectEmail($event)"></app-checkbox>
           <div class="displayFlex"> <i class="fa fa-star-o" aria-hidden="true"></i> Anna</div>
           <div>Congratulations! you are selected.</div>
           <div>2:30</div> 
       </div>
       <div>     
-      
-          <app-checkbox [width]="'20px'" [value]="object.keys(selectedEmpList).length === object.keys(schedules).length || object.keys(selectedEmpList).length === 20" (click)="selectAllEmployees($event)"></app-checkbox>
-         <!-- CheckBox -->
-        <!-- <div>{{mail.name}}</div>
-        <div>{{mail.msg}}</div>
-        <div>{{mail.time}}</div> -->
+        <app-checkbox [width]="'20px'" [marginLeft]="'10px'" [marginRight]="'10px'" [value]="object.keys(selectedEmail).includes(i.msg)" (click)="selectEmail($event)"></app-checkbox>
         <div class="displayFlex"> <i class="fa fa-star-o" aria-hidden="true"></i> Anna</div>
         <div>Congratulations! you are selected.</div>
         <div>2:30</div> 
@@ -66,8 +56,8 @@
     <!-- </ng-container> -->
   </div>
 
-<!-- When No Devices in Database or null values -->
-  <div class="noDataAvailable" *ngIf="!show_loader && filteredDevices.length == 0">
+<!-- When No Values in Database or null values -->
+  <div class="noDataAvailable" *ngIf="!show_loader && mockData.length == 0">
     <!-- <img src="assets/nodata.png" alt="nodata" class="no_data"/>  -->
     <p>No data available, Please select the BUID's to display enteries.</p>
   </div>
@@ -76,7 +66,7 @@
 <!-- <app-loader [showLoader]="show_loader"></app-loader> -->
 
 <!-- Pager -->
-<!-- <div class="row" *ngIf="filteredDevices.length > 0">
+<!-- <div class="row" *ngIf="mockData.length > 0">
   <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
 </div> -->
 
