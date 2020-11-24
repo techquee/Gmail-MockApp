@@ -31,4 +31,6 @@ This WEB APPLICATION is built on angular which imitates popular GmailApp. Featur
 
 ![image](https://github.com/techquee/Gmail-MockApp/blob/master/screenshots/Screenshot%20(31).png)
 ![image](https://github.com/techquee/Gmail-MockApp/blob/master/screenshots/Screenshot%20(32).png)
+![image](https://github.com/techquee/Gmail-MockApp/blob/master/screenshots/Screenshot%20(33).png)
+![image](https://github.com/techquee/Gmail-MockApp/blob/master/screenshots/Screenshot%20(34).png)
 
