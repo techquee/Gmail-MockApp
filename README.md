@@ -7,7 +7,7 @@ This WEB APPLICATION is built on angular which imitates popular GmailApp. Featur
 1. Search added using Ng2SearchPipeModule,
 2. SelectALL mail functionality included,
 3. Send mail using SMTP API with elastic mail service,
-4. Gmail Api to get data like unread, draft [mails],
+4. Gmail Api to get data like unread, draft [mails]
 5. Login Register functionality,
 6. see and delete user code also included,
 7. starred and unstar mails, and
@@ -28,6 +28,8 @@ This WEB APPLICATION is built on angular which imitates popular GmailApp. Featur
 3. Refresh(Polling)
 4. Segregating mails - Primary, social, work, irrelevant
 5. Sorting/Searching DateWise
+
+## There are some Limitation to this App(as of now). 
 
 ![image](https://github.com/techquee/Gmail-MockApp/blob/master/screenshots/Screenshot%20(31).png)
 ![image](https://github.com/techquee/Gmail-MockApp/blob/master/screenshots/Screenshot%20(32).png)
